@@ -30,3 +30,45 @@ function containsDuplicate(arr) {
 }
 
 containsDuplicate(arr);
+
+//add 2 numbers
+// let num1 = 5;
+// let num2 = 7;
+// const addNum = (num1, num2) => {
+//   return num1 + num2;
+// };
+function addSum ( a, b){
+  
+  return a + b
+}
+addSum(2,5);
+
+
+console.log("Hello")
+
+//square root 
+let number1 = 8;
+//const result1 = Math.Sqrt(number1);
+//console.log(result1);
+
+let number2 = 8;
+const result2 = Math.sqrt(number2);
+console.log(result2);
+
+//area of an triangle (base*height/2)
+let base;
+let height;
+function aresOfTriangle (base , height) {
+ area = base * height/2
+ console.log(area);
+}
+
+aresOfTriangle(4,6)
+
+//swaping of variable 
+let a = 5;
+let b = 9;
+console.log(`a = ${a}` , `b = ${b}`);
+let temp = a;
+ a = b;
+ console.log(a);
