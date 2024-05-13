@@ -171,3 +171,51 @@ Object.defineProperties(person, {
 });
 
 console.log(person);
+
+
+//string trim 
+let str = "     gauri mahashabde"
+console.log(str);
+
+//promise
+const myPromise = new Promise((resolve , reject) => {
+  setTimeout(() => {
+    const randomNumber = Math.random();
+    if(randomNumber < 10){
+      resolve(randomNumber);
+    }
+    else {
+      reject (new Error('Random number is too high'))
+    }
+  },1000)
+});
+
+myPromise.then((result) => {
+  ////console.log('success:', result)
+
+}) .catch((error) => {
+  console.log('error:',error) 
+
+})
+
+//async await
+function fetchData() {
+return new Promise ((resolve) => {
+  setTimeout(()=>{
+    resolve("Data fetched successfully")
+  },1000)
+})
+
+}
+
+async function fetchDataAsync(){
+  try {
+    const data = fetchData();
+    console.log(data);
+  }
+  catch(error) {
+        console.log('error in fetching:',error)
+  }
+}
+
+fetchDataAsync();
