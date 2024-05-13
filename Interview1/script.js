@@ -144,6 +144,30 @@ function divBy (table) {
 const number = [12,13,14];
 number.reduce(addAll);
 function addAll (total , num) {
-return total = total + num
-console.log(total);
+return total + num
+
 }
+console.log(number);
+
+//object creation
+const employee = {
+  name : "Gauri",
+  age : 23
+
+}
+
+console.log(employee.name);
+
+const person ={} ;
+Object.defineProperties(person, {
+  'name' :{
+    value: "Gauri" ,
+    writable: true
+  },
+  'age' : {
+    value:30,
+    writable:false
+  }
+});
+
+console.log(person);
