@@ -238,3 +238,13 @@ const myPromise1 = new Promise((resolve , reject)=>{
   .catch(function(){
       console.log("error occured  ")
   })
+
+  const getData = async () => {
+    let data = "Hello World";
+    return data;
+}
+getData().then(data => console.log(data));
+
+const num = [2,3,4,5,6,7,8];
+const square = num.map((n) => {n*n})
+console.log(square);
