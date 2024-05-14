@@ -219,3 +219,22 @@ async function fetchDataAsync(){
 }
 
 fetchDataAsync();
+
+//promise example
+const myPromise1 = new Promise((resolve , reject)=>{
+  let name = 'gauri';
+  let newName = 'Gauri'
+  if(name == newName){
+      resolve();
+  }else{
+      reject();
+  }
+  
+  })
+  
+  myPromise1.then (function(){
+      console.log("success")
+  })
+  .catch(function(){
+      console.log("error occured  ")
+  })
