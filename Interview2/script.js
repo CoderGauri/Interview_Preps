@@ -61,3 +61,37 @@
 // Breaking Into Modules
 // Deploy
 
+//promise1
+
+// // const apiUrl = 'https://api.example.com/data';
+
+// // const myPromise = new Promise((resolve , reject) => {
+// //  fetch(apiUrl)
+// //  .then(response => {
+// //     if(!response.ok){
+// //         reject(`error:${response.statusText}`)
+//     }
+//     return response.json();
+
+//  })
+// })
+
+//example 1
+const myPromise = new Promise((resolve, reject) => {
+  const success = true;
+  if (success) {
+    resolve("operation successfull");
+  } else {
+    reject("operation failed");
+  }
+});
+
+myPromise
+.then(result => {
+    console.log(result)
+})
+.catch(error => {
+    console.log(error)
+}
+
+)
